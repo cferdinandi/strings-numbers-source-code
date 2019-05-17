@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Template Literals</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Styles -->
+		<style type="text/css">
+			body {
+				max-width: 40em;
+				width: 88%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<p><strong>Note:</strong> this will not work in IE and cannot be polyfilled.</p>
+
+		<div id="app"></div>
+
+
+		<script>
+			var app = document.querySelector('#app');
+
+			/**
+			 * Simple multi-line strings
+			 */
+			var str1 =
+				`<h1>Hello, world!</h1>
+				<p>How are you today?</p>`;
+
+			console.log(str1);
+
+			/**
+			 * Using variables in strings
+			 */
+			var greeting = 'Hi, universe!';
+			var message = 'How is the weather today?';
+			var str2 =
+				`<h1>${greeting}</h1>
+				<p>${message}</p>`;
+
+			console.log(str2);
+
+			/**
+			 * Using conditionals and methods
+			 */
+			var wizards = ['Hermione', 'Neville', 'Gandalf', 'Radagast'];
+			var showHeading = true;
+			var str3 =
+				`${showHeading ? '<h1>Awesome Wizards</h1>' : ''}
+				${wizards.map(function (wizard) {
+					return `<li>${wizard}</li>`;
+				}).join('')}`;
+
+			console.log(str3);
+		</script>
+	</body>
+</html>

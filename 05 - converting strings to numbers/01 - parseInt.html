@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>toUpperCase()</title>
+		<title>parseInt()</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Styles -->
@@ -19,15 +19,13 @@
 
 	<body>
 
-		<p>Hello, world!</p>
 
-
-		<!-- Scripts -->
 		<script>
-			var mixedCase = 'This sentence has some MIXED CASE LeTTeRs in it.';
+			var fourtyTwo = parseInt('42', 10);
+			var fourtyTwoPx = parseInt('42px', 10);
 
-			var upper = mixedCase.toUpperCase();
-			console.log(upper);
+			console.log(fourtyTwo);
+			console.log(fourtyTwoPx);
 		</script>
 	</body>
 </html>

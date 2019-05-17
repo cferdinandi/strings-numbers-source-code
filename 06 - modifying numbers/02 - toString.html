@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>parseFloat()</title>
+		<title>toString()</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Styles -->
@@ -21,9 +21,14 @@
 
 
 		<script>
-			console.log(Number('123'));
-			console.log(Number('12.3'));
-			console.log(Number('3.14someRandomStuff'));
+			var pi = 3.14;
+			var piString = pi.toString();
+
+			var eleven = 11;
+			var elevenString = eleven.toString();
+
+			console.log(piString);
+			console.log(elevenString);
 		</script>
 	</body>
 </html>

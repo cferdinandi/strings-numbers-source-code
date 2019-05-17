@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>parseInt()</title>
+		<title>Math.ceil()</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Styles -->
@@ -21,8 +21,13 @@
 
 
 		<script>
-			console.log(parseInt('42', 10));
-			console.log(parseInt('42px', 10));
+			var num1 = Math.ceil(42);
+			var num2 = Math.ceil(3.14);
+			var num3 = Math.ceil(-3.14);
+
+			console.log(num1);
+			console.log(num2);
+			console.log(num3);
 		</script>
 	</body>
 </html>

@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Template Literals</title>
+		<title>Combining Strings</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Styles -->
@@ -21,20 +21,24 @@
 
 
 		<script>
-			// Basic template literal
-			var concat =
-				`I love Cape Cod potato chips.
-				what about you?`;
+			/**
+			 * Strings as variables
+			 */
+
+			var str1 = 'I love Cape Cod potato chips.';
+			var str2 = 'What about you?';
+			var concat = str1 + ' ' + str2;
 
 			console.log(concat);
 
 
-			// Template literal with placeholder variables
-			var brand = 'Cape Cod';
-			var person = 'you';
+			/**
+			 * Creating a new variable from two strings
+			 */
+
 			var concat2 =
-				`I love ${brand} potato chips.
-				what about ${person}?`;
+				'I love Cape Cod potato chips. ' +
+				'What about you?';
 
 			console.log(concat2);
 		</script>

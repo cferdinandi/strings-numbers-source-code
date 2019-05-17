@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>padStart()</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Styles -->
+		<style type="text/css">
+			body {
+				max-width: 40em;
+				width: 88%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+
+
+		<script>
+			var hour3 = '3';
+			var hour12 = '12';
+
+			// Add leading 0's if needed
+			var padded3 = hour3.padStart(2, '0');
+			var padded12 = hour12.padStart(2, '0');
+
+			console.log(padded3);
+			console.log(padded12);
+		</script>
+	</body>
+</html>

@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>parseFloat()</title>
+		<title>Math.floor()</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Styles -->
@@ -21,9 +21,13 @@
 
 
 		<script>
-			console.log(parseFloat('3.14'))
-			console.log(parseFloat('3.14someRandomStuff'));
-			console.log(parseFloat('3'));
+			var num1 = Math.floor(42);
+			var num2 = Math.floor(3.14);
+			var num3 = Math.floor(-3.14);
+
+			console.log(num1);
+			console.log(num2);
+			console.log(num3);
 		</script>
 	</body>
 </html>

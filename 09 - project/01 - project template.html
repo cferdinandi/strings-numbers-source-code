@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Project Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Styles -->
+		<style type="text/css">
+			body {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 30em;
+				width: 88%;
+			}
+
+			.row {
+				display: flex;
+			}
+
+			.row label {
+				flex: 1;
+				margin-right: 0.5em;
+			}
+
+			.row input {
+				flex: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Tip Calculator</h1>
+
+		<form id="tip-calculator">
+			<div class="row">
+				<label for="amount">Bill Amount</label>
+				<input type="text" name="amount" id="amount">
+			</div>
+
+			<div class="row">
+				<label for="tip">Tip %</label>
+				<input type="text" name="tip" id="tip">
+			</div>
+
+			<div class="row">
+				<label for="people">Number of People</label>
+				<input type="text" name="people" id="people">
+			</div>
+
+			<div id="per-person" aria-live="polite"></div>
+
+			<p class="text-right">
+				<button>Calculate Tip</button>
+			</p>
+		</form>
+
+
+		<!-- Scripts -->
+		<script>
+			// Code goes here...
+		</script>
+	</body>
+</html>
