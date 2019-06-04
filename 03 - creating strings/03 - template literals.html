@@ -21,12 +21,8 @@
 
 		<p><strong>Note:</strong> this will not work in IE and cannot be polyfilled.</p>
 
-		<div id="app"></div>
-
 
 		<script>
-			var app = document.querySelector('#app');
-
 			/**
 			 * Simple multi-line strings
 			 */
@@ -35,6 +31,8 @@
 				<p>How are you today?</p>`;
 
 			console.log(str1);
+
+
 
 			/**
 			 * Using variables in strings
@@ -47,6 +45,8 @@
 
 			console.log(str2);
 
+
+
 			/**
 			 * Using conditionals and methods
 			 */
@@ -54,9 +54,11 @@
 			var showHeading = true;
 			var str3 =
 				`${showHeading ? '<h1>Awesome Wizards</h1>' : ''}
-				${wizards.map(function (wizard) {
-					return `<li>${wizard}</li>`;
-				}).join('')}`;
+				<ul>
+					${wizards.map(function (wizard) {
+						return `<li>${wizard}</li>`;
+					}).join('')}
+				</ul>`;
 
 			console.log(str3);
 		</script>
