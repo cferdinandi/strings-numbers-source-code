@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Number()</title>
+		<title>String.toUpperCase()</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -11,13 +11,10 @@
 
 
 		<script>
-			let int = Number('123');
-			let float = Number('12.3');
-			let pi = Number('3.14someRandomStuff');
+			let text = 'This sentence has some MIXED CASE LeTTeRs in it.';
 
-			console.log(int);
-			console.log(float);
-			console.log(pi);
+			let upper = text.toUpperCase();
+			console.log(upper);
 		</script>
 	</body>
 </html>

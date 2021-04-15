@@ -6,29 +6,23 @@
 		<title>Project Template</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Styles -->
 		<style type="text/css">
 			body {
-				margin-left: auto;
-				margin-right: auto;
+				margin: 0 auto;
 				max-width: 30em;
 				width: 88%;
 			}
 
 			.row {
-				display: flex;
-			}
-
-			.row label {
-				flex: 1;
-				margin-right: 0.5em;
-			}
-
-			.row input {
-				flex: 2;
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				grid-template-rows: 1fr;
+				grid-column-gap: 1em;
+				margin-bottom: 0.5em;
 			}
 
 			#per-person {
+				font-weight: bold;
 				padding-top: 1em;
 			}
 		</style>
@@ -62,29 +56,28 @@
 		</form>
 
 
-		<!-- Scripts -->
 		<script>
 			// Variables
-			var calculator = document.querySelector('#tip-calculator');
-			var amount = document.querySelector('#amount');
-			var tip = document.querySelector('#tip');
-			var people = document.querySelector('#people');
-			var perPerson = document.querySelector('#per-person');
+			let calculator = document.querySelector('#tip-calculator');
+			let amount = document.querySelector('#amount');
+			let tip = document.querySelector('#tip');
+			let people = document.querySelector('#people');
+			let perPerson = document.querySelector('#per-person');
 
 			// Calculate the tip
-			var calculateTip = function () {
+			function calculateTip () {
 
 				// Calculate amounts
-				var tipPercentage = parseInt(tip.value, 10) / 100;
-				var amountValue = parseFloat(amount.value);
-				var tipAmount = amountValue * tipPercentage;
-				var total = amountValue + tipAmount;
-				var perPersonAmount = total / parseInt(people.value, 10);
+				let tipPercentage = parseInt(tip.value, 10) / 100;
+				let amountValue = parseFloat(amount.value);
+				let tipAmount = amountValue * tipPercentage;
+				let total = amountValue + tipAmount;
+				let perPersonAmount = total / parseInt(people.value, 10);
 
 				// Show the per-person amount
-				perPerson.textContent = 'Each person owes $' + perPersonAmount.toFixed(2).toString();
+				perPerson.textContent = `Each person owes $${perPersonAmount.toFixed(2).toString()}`;
 
-			};
+			}
 
 			// Listen for calculator submission events
 			calculator.addEventListener('submit', function () {
@@ -98,7 +91,7 @@
 				// Calculate how much each person owes
 				calculateTip();
 
-			}, false);
+			});
 		</script>
 	</body>
 </html>

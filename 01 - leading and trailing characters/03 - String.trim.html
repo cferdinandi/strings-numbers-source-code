@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Number()</title>
+		<title>String.trim()</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -11,13 +11,11 @@
 
 
 		<script>
-			let int = Number('123');
-			let float = Number('12.3');
-			let pi = Number('3.14someRandomStuff');
+			let str = '   I love Cape Cod potato chips.   ';
+			let trimmed = str.trim();
 
-			console.log(int);
-			console.log(float);
-			console.log(pi);
+			console.log(str);
+			console.log(trimmed);
 		</script>
 	</body>
 </html>

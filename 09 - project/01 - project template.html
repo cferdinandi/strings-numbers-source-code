@@ -6,26 +6,24 @@
 		<title>Project Template</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Styles -->
 		<style type="text/css">
 			body {
-				margin-left: auto;
-				margin-right: auto;
+				margin: 0 auto;
 				max-width: 30em;
 				width: 88%;
 			}
 
 			.row {
-				display: flex;
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				grid-template-rows: 1fr;
+				grid-column-gap: 1em;
+				margin-bottom: 0.5em;
 			}
 
-			.row label {
-				flex: 1;
-				margin-right: 0.5em;
-			}
-
-			.row input {
-				flex: 2;
+			#per-person {
+				font-weight: bold;
+				padding-top: 1em;
 			}
 		</style>
 	</head>
@@ -58,7 +56,6 @@
 		</form>
 
 
-		<!-- Scripts -->
 		<script>
 			// Code goes here...
 		</script>
